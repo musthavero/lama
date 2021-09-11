@@ -1,0 +1,12 @@
+{
+    "Backend": true,
+    "Products": true,
+    "Orders": true,
+    "Reviews": true,
+    "Shops": true,
+    "Cart": true,
+    "Shipping": true,
+    "Payment": true,
+    "Images": true,
+    "Frontend": true
+}
