@@ -8,5 +8,11 @@
     "Shipping": true,
     "Payment": true,
     "Images": true,
-    "Frontend": true
+    "Frontend": true,
+    "Address": true,
+    "Companies": true,
+    "Categories": true,
+    "User": true,
+    "Mailing": true,
+    "Menus": true
 }

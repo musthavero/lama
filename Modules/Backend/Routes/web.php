@@ -11,6 +11,8 @@
 |
 */
 
-Route::prefix('backend')->group(function() {
-    Route::get('/', 'BackendController@index');
+Route::group(['middleware' => ['auth']], function() {
+    Route::prefix('backend')->group(function() {
+        Route::get('/', 'BackendController@index');
+    });
 });

@@ -11,6 +11,6 @@
 |
 */
 
-Route::prefix('images')->group(function() {
-    Route::get('/', 'ImagesController@index');
-});
+//Route::prefix('images')->group(function() {
+//    Route::get('/', 'ImagesController@index');
+//});

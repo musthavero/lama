@@ -12,9 +12,26 @@ class BackendController extends Controller
      * Display a listing of the resource.
      * @return Renderable
      */
+
+//    public function __construct() {
+//        if (Gate::denies('access-backend')) {
+//            abort(403);
+//        }
+//    }
+
     public function index()
     {
-        return view('backend::index');
+        $menus = [
+            ['name' => 'Home',
+                'url' => 'backend',
+                'children' => []
+            ],
+            ['name' => 'Not Home',
+                'url' => '/',
+                'children' => []
+            ]
+        ];
+        return view('backend::index', ['menus' => $menus]);
     }
 
     /**

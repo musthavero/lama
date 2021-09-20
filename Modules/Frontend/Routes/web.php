@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::prefix('frontend')->group(function() {
+Route::prefix('')->group(function() {
     Route::get('/', 'FrontendController@index');
+    Route::get('product/{name}-{id}', function() { return 'detalii produs';});
+    Route::get('category/{name}-{id}', function() { return 'detalii produs';});
 });

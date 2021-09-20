@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Module Backend</title>
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <title>Administration - Lama - The Open Laravel Marketplace</title>
 
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/backend.css') }}"> --}}

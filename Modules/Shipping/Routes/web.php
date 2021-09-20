@@ -11,6 +11,6 @@
 |
 */
 
-Route::prefix('shipping')->group(function() {
-    Route::get('/', 'ShippingController@index');
-});
+//Route::prefix('shipping')->group(function() {
+//    Route::get('/', 'ShippingController@index');
+//});
