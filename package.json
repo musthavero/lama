@@ -18,5 +18,8 @@
         "postcss": "^8.3.6",
         "tailwindcss": "^2.2.15"
     },
-    "dependencies": {}
+    "dependencies": {
+        "alpinejs": "^3.4.0",
+        "sortablejs": "^1.14.0"
+    }
 }

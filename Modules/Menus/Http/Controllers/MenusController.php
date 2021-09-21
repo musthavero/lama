@@ -16,6 +16,10 @@ class MenusController extends Controller
     {
         return view('menus::index');
     }
+    public function menuManager()
+    {
+        return view('menus::menus');
+    }
 
     /**
      * Show the form for creating a new resource.

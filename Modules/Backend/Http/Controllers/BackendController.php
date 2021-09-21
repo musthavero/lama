@@ -5,6 +5,8 @@ namespace Modules\Backend\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Cache;
+use Modules\Menus\Entities\MenuItem;
 
 class BackendController extends Controller
 {
@@ -21,16 +23,10 @@ class BackendController extends Controller
 
     public function index()
     {
-        $menus = [
-            ['name' => 'Home',
-                'url' => 'backend',
-                'children' => []
-            ],
-            ['name' => 'Not Home',
-                'url' => '/',
-                'children' => []
-            ]
-        ];
+        $menuId = 1;
+        $menus = Cache::remember('menu_'.$menuId, 36400, function () use ($menuId) {
+            return MenuItem::with('children','children.children','children.children.children','parent')->where('menu_id',$menuId)->where('parent_id',0)->orderBy('sort')->get();
+        });
         return view('backend::index', ['menus' => $menus]);
     }
 

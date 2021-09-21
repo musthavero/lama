@@ -4,6 +4,7 @@ namespace Modules\Menus\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\Menus\Http\Middleware\AppropiateMenuMiddleware;
 
 class MenusServiceProvider extends ServiceProvider
 {
@@ -28,6 +29,8 @@ class MenusServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
+        app()->make('router')->aliasMiddleware('menus', AppropiateMenuMiddleware::class);
+
     }
 
     /**

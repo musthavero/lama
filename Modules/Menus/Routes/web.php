@@ -11,6 +11,8 @@
 |
 */
 
-Route::prefix('menus')->group(function() {
-    Route::get('/', 'MenusController@index');
+
+
+Route::group(['prefix' => 'backend', 'middleware' => ['auth', 'menus']], function () {
+        Route::get('menus/', 'MenusController@menuManager');
 });
