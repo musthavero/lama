@@ -14,5 +14,5 @@
 
 
 Route::group(['prefix' => 'backend', 'middleware' => ['auth', 'menus']], function () {
-        Route::get('menus/', 'MenusController@menuManager');
+        Route::get('menus/', 'MenusController@manager');
 });
