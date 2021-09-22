@@ -9,5 +9,6 @@ Required so far:
 <li>alpine js</li>
 <li>sortable js</li>
 <li>nwidart laravel modules</li>
+<li>mhmiton laravel modules livewire</li>
 <li>livewire</li>
 </ul>
