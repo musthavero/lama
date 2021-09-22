@@ -11,6 +11,7 @@
 |
 */
 
-//Route::prefix('categories')->group(function() {
-//    Route::get('/', 'CategoriesController@index');
-//});
+Route::group(['prefix' => 'backend', 'middleware' => ['auth','menus']], function () {
+    Route::get('categories/', 'CategoriesController@manager');
+});
+

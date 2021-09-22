@@ -16,9 +16,9 @@ class MenusController extends Controller
     {
         return view('menus::index');
     }
-    public function menuManager()
+    public function manager()
     {
-        return view('menus::menus');
+        return view('menus::manager');
     }
 
     /**

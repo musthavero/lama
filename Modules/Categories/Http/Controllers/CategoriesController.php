@@ -17,6 +17,10 @@ class CategoriesController extends Controller
         return view('categories::index');
     }
 
+    public function manager()
+    {
+        return view('categories::manager');
+    }
     /**
      * Show the form for creating a new resource.
      * @return Renderable
