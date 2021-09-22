@@ -1,0 +1,13 @@
+{
+    "name": "ProductStatuses",
+    "alias": "productstatuses",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ProductStatuses\\Providers\\ProductStatusesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

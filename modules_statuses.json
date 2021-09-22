@@ -14,5 +14,7 @@
     "Categories": true,
     "User": true,
     "Mailing": true,
-    "Menus": true
+    "Menus": true,
+    "ProductStatuses": true,
+    "ProductTypes": true
 }

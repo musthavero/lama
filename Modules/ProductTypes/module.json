@@ -1,0 +1,13 @@
+{
+    "name": "ProductTypes",
+    "alias": "producttypes",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ProductTypes\\Providers\\ProductTypesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

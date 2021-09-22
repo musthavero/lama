@@ -1,9 +1,10 @@
 <?php
 
-namespace Modules\Products\Entities;
+namespace Modules\ProductStatuses\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Modules\Products\Entities\Product;
 
 class ProductStatus extends Model
 {
