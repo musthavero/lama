@@ -11,6 +11,7 @@
 |
 */
 
-//Route::prefix('products')->group(function() {
-//    Route::get('/', 'ProductsController@index');
-//});
+Route::group(['prefix' => 'backend', 'middleware' => ['auth', 'menus']], function () {
+    Route::get('products/statuses', 'StatusesController@manager');
+    Route::get('products/types', 'TypesController@manager');
+});

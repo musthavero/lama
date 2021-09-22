@@ -10,9 +10,12 @@ class ProductStatus extends Model
     use HasFactory;
 
     protected $fillable = [];
-    
+
     protected static function newFactory()
     {
         return \Modules\Products\Database\factories\ProductStatusFactory::new();
+    }
+    public function products() {
+        return $this->hasMany(Product::class,'id');
     }
 }
